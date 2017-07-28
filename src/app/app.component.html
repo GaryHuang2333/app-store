@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="header">
+<h2><a routerLink="login">Date:</a>{{now | date:"yyyy-MM-dd"}}&nbsp;&nbsp;&nbsp;&nbsp;Welcome to {{title}}</h2>
+</div>
+
+<div class="row">
+<div class="col-2 col-m-2 menu">
+<ul>
+<li><a routerLink="home">Home</a></li>
+<li><a routerLink="game">Game</a></li>
+<li>Shopping</li>
+<li>Photo&amp;Video</li>
+<li>Food&amp;Drink</li>
+<li>Health&amp;Fitness</li>
+</ul>
+</div>
+<div class="col-10 col-m-10 main-container">
+<router-outlet></router-outlet>
+</div>
+
+</div>
+<div class="footer">
+<p>Copyright Gary(Huang Junhong) 2017</p>
+</div>
+

@@ -1,0 +1,29 @@
+<p>
+  <span *ngIf="isNew">New a game</span>
+  <span *ngIf="!isNew">编辑用户:{{this.gameId}}</span>
+</p>
+
+<div>
+Name：
+<input type="text" [(ngModel)]="game.name"/>
+</div>
+
+<div>
+Platform：
+<select [(ngModel)]="game.platform">
+  <option value="IOS">IOS</option>
+  <option value="Android">Android</option>
+</select>
+</div>
+
+<div>
+Review：
+<input type="text" [(ngModel)]="game.review"/>
+</div>
+
+<div>
+Rating：
+<input type="text" [(ngModel)]="game.rating"/>
+</div>
+<button (click)="back()">Return</button>
+<button routerLink="/game" (click)="save()">submit</button>
