@@ -6,6 +6,7 @@
 
 项目作者
 - Gary Huang Junhong
+
 项目目标
 - 使用最新版Angular实现后台管理示例项目
 - 基于Git及组件式开发规范实现Angular项目最佳实践
