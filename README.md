@@ -4,7 +4,8 @@
 
 本项目配合最新版[《Angular大前端基础与实战》](http://book-angular.mydoc.io/)教材使用
 
-
+项目作者
+- Gary Huang Junhong
 项目目标
 - 使用最新版Angular实现后台管理示例项目
 - 基于Git及组件式开发规范实现Angular项目最佳实践
