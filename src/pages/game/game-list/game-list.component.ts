@@ -22,6 +22,23 @@ export class GameListComponent implements OnInit {
   searchResult:Array<any>;
   games:Array<any>=[];
 
+// test
+  test: string="test";
+
+  clickTest(event: any){
+    let test = document.getElementById("test");
+    test.innerHTML="After Change";
+    console.log(test);
+    console.log(event);
+  }
+
+  submitName(event: any){
+    let ev = document.getElementById("testText");
+    console.log(ev);
+  }
+
+// test
+
   getUserClick(ev){
     this.selectGame = ev
     console.log(ev);

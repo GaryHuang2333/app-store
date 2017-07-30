@@ -1,3 +1,19 @@
+<div class='test'>
+  <p>Display data</p>
+  <h2 id="test">My favorite test is: {{test}}</h2>
+  <button type="button" (click)="clickTest($event)" id="testButton">change the text</button>
+</div>
+<div>
+    <p>Please input your name</p>
+    <input type="text" id="testText" width="20px" value="default name"/><button (click)="submitName($event)">Submit</button>
+</div>
+<div>
+  <p []>test text</p>
+
+
+</div>
+<hr/>
+
 <p>Your Selected Games : {{selectGame.name}}</p>
 <div class="table-controls">
     <div class="search-area" style="height:60px;">
@@ -21,9 +37,9 @@
       <div class="col-1" (click)="sortByAsccending('id')">ID </div>
       <div class="col-2" (click)="sortByAsccending('name')">Name </div>
       <div class="col-1" (click)="sortByAsccending('platfor')">Platform </div>
-      <div class="col-2" (click)="sortByAsccending('review')">Review </div>
+      <div class="col-1" (click)="sortByAsccending('review')">Review </div>
       <div class="col-1" (click)="sortByDesccending('rating')">Rating </div>
-      <div class="col-2">Operate </div>
+      <div class="col-1">Operate </div>
 </div>
 <div class="row table-row" *ngFor="let game of searchResult">
   <app-game-item [game]="game" (gameClick)="selectGame = $event"></app-game-item>
